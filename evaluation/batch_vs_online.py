@@ -6,12 +6,12 @@ on identical data and returns comparable results.
 
 Why two separate runs on the same data?
 ────────────────────────────────────────
-    Batch model  – sees ALL training rows at once, fits in one go, then
+    Batch model    sees ALL training rows at once, fits in one go, then
                    is evaluated once on a held-out test set.  This is the
                    gold-standard accuracy ceiling for a linear model on
                    this feature set.
 
-    Online model – sees each row exactly once, in order.  It predicts
+    Online model   sees each row exactly once, in order.  It predicts
                    BEFORE seeing the label (prequential / honest eval),
                    then updates.  We record sliding-window metrics at
                    every step so we can plot the convergence curve.
@@ -20,8 +20,8 @@ What this module returns
 ────────────────────────
 A single dict with two top-level keys:
 
-    results["batch"]  – dict with the sklearn model's test-set metrics
-    results["online"] – dict with time-series histories (one value per
+    results["batch"]    dict with the sklearn model's test-set metrics
+    results["online"]   dict with time-series histories (one value per
                         sample) so the driver can plot accuracy, F1, AUC,
                         loss, and the learning rate over time.
 

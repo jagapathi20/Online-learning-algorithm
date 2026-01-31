@@ -26,7 +26,6 @@ A production-ready implementation of **online (streaming) logistic regression** 
 - [Core Components](#core-components)
 - [Understanding the Results](#understanding-the-results)
 - [Advanced Usage](#advanced-usage)
-- [Testing](#testing)
 - [Performance Characteristics](#performance-characteristics)
 - [When to Use Online Learning](#when-to-use-online-learning)
 - [Contributing](#contributing)
@@ -45,8 +44,8 @@ A production-ready implementation of **online (streaming) logistic regression** 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/online-logistic-regression.git
-cd online-logistic-regression
+git clone https://github.com/yourusername/online-learning-algorithm.git
+cd online-learning-algorithm
 
 # Install required packages
 pip install -r requirements.txt
